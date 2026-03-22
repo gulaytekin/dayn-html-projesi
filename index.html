@@ -37,7 +37,7 @@
 
         const modeText = document.getElementById('mode-text');
 
-        // TÜRKÇE KARŞILIK SİSTEMİ
+        
         const templateNames = {
             sphere: "Küre",
             heart: "Kalp",
@@ -138,7 +138,7 @@
                     const nextIdx = (modes.indexOf(currentTemplate) + 1) % modes.length;
                     currentTemplate = modes[nextIdx];
 
-                    // TÜRKÇE GÖSTERİM
+                    
                     modeText.innerText = `Aktif Şablon: ${templateNames[currentTemplate]}`;
 
                     lastSwitchTime = Date.now();
